@@ -1,8 +1,8 @@
 - name: Introduction
   href: intro.md
 
-- name: Scenario visitors register
+- name: Client are able to register
   href: are_able_to_register.md
 
-- name: Scenario visitors could not register
+- name: Client not are able to register
   href: not_able_to_register.md
