@@ -36,16 +36,8 @@ steps:
     git add .
     git commit -am "Update docs each build"
     git tag $(Build.SourceVersion)
+    git push
     git push --tags
     ls -la
     
   displayName: 'Run a multi-line install mono'
-
-  # Starter pipeline
-- task: GitHubRelease@0
-  inputs:
-    gitHubConnection: '$(github.connection)'
-    repositoryName: '$(Build.Repository.Name)'
-    action: 'create'
-    target: '$(Build.SourceVersion)'
-    tagSource: 'auto'
