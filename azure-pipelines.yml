@@ -42,13 +42,10 @@ steps:
     
   displayName: 'Run a multi-line install mono'
 
-- task: GitHubRelease@1
+- task: GitHubRelease@0
   inputs:
-    githubEndpoint: 'mendesbarreto'
+    gitHubConnection: 'mendesbarreto'
     repositoryName: 'DocFXForDevelopment'
     tag: '$(Build.BuildNumber)'
-    branch: 'master'
-    releaseName: '$(Build.SourceVersion)'
-    usecommitmessage: true
     isdraft: false
     isprerelease: false
