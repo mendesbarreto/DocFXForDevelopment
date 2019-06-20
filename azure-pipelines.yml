@@ -41,3 +41,5 @@ steps:
     ls -la
     
   displayName: 'Run a multi-line install mono'
+
+  
