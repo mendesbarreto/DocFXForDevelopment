@@ -19,7 +19,7 @@ steps:
     sudo apt-get install unzip
     wget "https://github.com/dotnet/docfx/releases/download/v2.43.1/docfx.zip" 
     unzip docfx.zip
-    git clone https://github.com/mendesbarreto/DocFXForDevelopment.git 
+    ls -la
     mono docfx/docfx.exe build DocFXForDevelopment/docfx_project/docfx.json
     
     
