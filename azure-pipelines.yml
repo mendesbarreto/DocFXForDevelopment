@@ -42,7 +42,8 @@ steps:
     
   displayName: 'Run a multi-line install mono'
 
-  - task: GitHubRelease@0
+
+- task: GitHubRelease@0
   inputs:
     gitHubConnection: a4a83ff7a879daba0ad0697b176c31df13e0004b
     repositoryName: '$(Build.Repository.Name)'
