@@ -41,11 +41,3 @@ steps:
     ls -la
     
   displayName: 'Run a multi-line install mono'
-
-
-- task: GitHubRelease@0
-  inputs:
-    repositoryName: '$(Build.Repository.Name)'
-    action: 'create'
-    target: '$(Build.SourceVersion)'
-    tagSource: 'auto'
