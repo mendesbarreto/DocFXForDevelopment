@@ -29,6 +29,7 @@ steps:
 
 - script: |
     - script: |
+    ehco '$(github.connection)'
     mono docfx/docfx.exe build docfx_project/docfx.json
     cp -r docfx_project/_site/ ./docs
     git status
