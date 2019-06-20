@@ -35,7 +35,7 @@ steps:
     git status
     git add .
     git commit -am "Update docs each build"
-    git tag 1.0
+    git tag $(Build.BuildNumber)
     git push --tags
     ls -la
     
