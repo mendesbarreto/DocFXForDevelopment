@@ -44,7 +44,7 @@ steps:
 
 - task: GitHubRelease@0
   inputs:
-    gitHubConnection: mendesbarreto
+    gitHubConnection: 'mendesbarreto'
     repositoryName: 'mendesbarreto/DocFXForDevelopment'
     action: 'create'
     target: '$(Build.SourceVersion)'
