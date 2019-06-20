@@ -48,7 +48,7 @@ steps:
     repositoryName: 'DocFXForDevelopment'
     tag: '$(Build.BuildNumber)'
     branch: 'master'
-    releaseName: 'Release $(Build.SourceVersion)'
+    releaseName: '$(Build.SourceVersion)'
     usecommitmessage: true
     isdraft: false
     isprerelease: false
