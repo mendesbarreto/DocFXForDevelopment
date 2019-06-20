@@ -10,8 +10,6 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo Install mono Dev!
-
 - script: |
     - script: |
     sudo apt install mono-devel.
@@ -24,3 +22,10 @@ steps:
     
     
   displayName: 'Run a multi-line script'
+
+- script: echo Install mono Dev!
+
+- script: |
+    - script: |
+    ls -la    
+  displayName: 'Run a multi-line install mono'
