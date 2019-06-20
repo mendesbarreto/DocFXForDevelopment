@@ -16,7 +16,7 @@ steps:
     sudo apt intall mono-complete
     sudo apt-get install unzip
     wget "https://github.com/dotnet/docfx/releases/download/v2.43.1/docfx.zip" 
-    unzip docfx.zip
+    unzip docfx.zip docfx
     
     
   displayName: 'Run a multi-line script'
@@ -25,7 +25,7 @@ steps:
 
 - script: |
     - script: |
-    mono docfx.exe build docfx_project/docfx.json
+    mono docfx/docfx.exe build docfx_project/docfx.json
     git status
     ls -la
     
