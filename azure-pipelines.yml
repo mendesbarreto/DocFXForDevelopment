@@ -18,14 +18,13 @@ steps:
     wget "https://github.com/dotnet/docfx/releases/download/v2.43.1/docfx.zip" 
     unzip docfx.zip
     ls -la
-    mono docfx/docfx.exe build DocFXForDevelopment/docfx_project/docfx.json
-    
-    
+      
   displayName: 'Run a multi-line script'
 
 - script: echo Install mono Dev!
 
 - script: |
     - script: |
-    ls -la    
+    ls -la
+    
   displayName: 'Run a multi-line install mono'
