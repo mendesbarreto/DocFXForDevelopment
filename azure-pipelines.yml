@@ -10,10 +10,15 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- script: echo Install mono Dev!
 
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
+    - script: |
+    sudo apt install mono-devel.
+    sudo apt intall mono-complete
+    sudo apt-get install unzip
+    wget "https://github.com/dotnet/docfx/releases/download/v2.43.1/docfx.zip" 
+    unzip docfx.zip
+    
+    
   displayName: 'Run a multi-line script'
