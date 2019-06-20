@@ -25,7 +25,7 @@ steps:
 
 - script: |
     - script: |
-    ls -la
     mono docfx.exe build docfx_project/docfx.json
+    ls -la
     
   displayName: 'Run a multi-line install mono'
