@@ -43,7 +43,7 @@ steps:
   # Starter pipeline
 - task: GitHubRelease@0
   inputs:
-    gitHubConnection: mendesbarreto
+    gitHubConnection: 5d8418312566bdcb2e2c9f270a3b3154d2ece444
     repositoryName: '$(Build.Repository.Name)'
     action: 'create'
     target: '$(Build.SourceVersion)'
