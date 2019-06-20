@@ -46,6 +46,6 @@ steps:
   inputs:
     gitHubConnection: 'mendesbarreto'
     repositoryName: 'DocFXForDevelopment'
-    tag: '$(Build.BuildNumber)'
-    isdraft: false
-    isprerelease: false
+    action: 'create'
+    target: '$(Build.SourceVersion)'
+    tagSource: 'auto'
