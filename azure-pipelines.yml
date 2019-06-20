@@ -36,7 +36,7 @@ steps:
     git add .
     git commit -am "Update docs each build"
     git tag $(Build.SourceVersion)
-    git push
+    git push -u origin master
     git push --tags
     ls -la
     
