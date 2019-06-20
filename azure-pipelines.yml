@@ -1,0 +1,42 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: |
+    - script: |
+    sudo apt install mono-devel.
+    sudo apt intall mono-complete
+    sudo apt-get install unzip
+    
+    
+  displayName: 'Run a multi-line install mono and unzip'
+
+- script: |
+    - script: |
+    mkdir docfx
+    wget "https://github.com/dotnet/docfx/releases/download/v2.43.1/docfx.zip" -P docfx
+    cd docfx
+    unzip docfx.zip
+    cd ..
+  displayName: 'Unzip DocFx'
+
+- script: |
+    - script: |
+    mono docfx/docfx.exe build docfx_project/docfx.json
+    cp -r docfx_project/_site/ ./docs
+    git status
+    git add .
+    git commit -am "Update docs each build"
+    git tag $(Build.BuildNumber)
+    git push --tags
+    ls -la
+    
+  displayName: 'Run a multi-line install mono'
