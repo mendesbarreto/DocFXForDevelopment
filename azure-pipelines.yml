@@ -19,6 +19,8 @@ steps:
     sudo apt-get install unzip
     wget "https://github.com/dotnet/docfx/releases/download/v2.43.1/docfx.zip" 
     unzip docfx.zip
+    git clone git@github.com:mendesbarreto/DocFXForDevelopment.git 
+    mono docfx/docfx.exe build DocFXForDevelopment/docfx_project/docfx.json
     
     
   displayName: 'Run a multi-line script'
