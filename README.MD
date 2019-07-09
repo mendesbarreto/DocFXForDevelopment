@@ -1,6 +1,6 @@
 [![Build Status](https://dev.azure.com/DouglasMendes0782/ProjectClient/_apis/build/status/mendesbarreto.DocFXForDevelopment?branchName=master)](https://dev.azure.com/DouglasMendes0782/ProjectClient/_build/latest?definitionId=1&branchName=master)
 
-# Setup
+# Setup Env
 
 To setup this project in your local host follow the steps:
 
@@ -47,3 +47,4 @@ cd DocFXForDevelopment
 ```
 
 1. On the internet browser access the link ```http://localhost:8080```
+
